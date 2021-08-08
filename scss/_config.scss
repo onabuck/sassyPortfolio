@@ -1,0 +1,18 @@
+// Variables / Mixins / Functions
+$website-width: 1280px;
+$main-color: #7e72a6;
+$secondary-color: #b482b4;
+$light-color: #ddd1e7;
+$blue-color: #93a5d1;
+$medium-color: #594258;
+$dark-color: #261d22;
+$bg-image: url("../img/annaDarkPurple.png");
+
+// Set text Color
+@function set-text-color($color) {
+  @if (lightness($color) > 50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
